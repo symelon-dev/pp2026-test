@@ -6,3 +6,4 @@ def is_leap_year(year):
 if __name__ == "__main__":
     for year in [2024, 2025, 2000, 1900]:
         print(year, is_leap_year(year))
+
