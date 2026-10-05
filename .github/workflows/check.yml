@@ -1,0 +1,17 @@
+name: 提出物の確認
+
+on: push
+
+jobs:
+  checkpoint-01:
+    name: 第1回
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: hello.py が動くか
+        run: python checkpoints/01/hello.py
+      - name: leap.py が正しいか
+        run: python checkpoints/01/check_leap.py

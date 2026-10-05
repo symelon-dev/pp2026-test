@@ -1,0 +1,13 @@
+{
+  "name": "pp2026",
+  "image": "mcr.microsoft.com/devcontainers/universal:6",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"],
+      "settings": {
+        "git.enableSmartCommit": false,
+        "editor.fontSize": 14
+      }
+    }
+  }
+}
